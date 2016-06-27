@@ -7,7 +7,8 @@
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "start-term": "web-term -c ~/Documents/workspace/docker-coreos-presentation/Docker --cols 100 --rows 100"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -25,7 +26,8 @@
     "express": "~4.13.3",
     "grunt-cli": "~0.1.13",
     "mustache": "~2.2.1",
-    "socket.io": "~1.3.7"
+    "socket.io": "~1.3.7",
+    "web-term": "^5.0.4"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
