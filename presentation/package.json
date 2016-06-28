@@ -8,7 +8,7 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "start-term": "web-term -c ~/Documents/workspace/docker-coreos-presentation/Docker --cols 100 --rows 100"
+    "start-term": "web-term -c ~/Documents/workspace/simple-docker-presentation/Docker"
   },
   "author": {
     "name": "Hakim El Hattab",
