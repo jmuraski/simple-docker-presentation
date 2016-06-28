@@ -41,8 +41,7 @@ jmu<!doctype html>
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section data-markdown>
-          ## Microservices with Docker
-          ### Part 1
+          ## Docker
           Created by Joe Muraski / [@jmuraski](http://twitter.com/jmuraski) / [My Profile](https://www.linkedin.com/in/jmuraski)
         </section>
 
@@ -67,7 +66,7 @@ jmu<!doctype html>
           - Microservices
         </section>
         <section>
-        <h2>Microservice Requirements</h2>
+        <h2>Docker Benefits (Microservices)</h2>
         <ul>
           <li>Rapid Provisioning <a style="font-size: 15px" href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">Microservices Prerequisites(Fowler)</a></li>
           <li>Basic Monitoring <a style="font-size: 15px" href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">Microservices Prerequisites(Fowler)</a></li>
@@ -75,14 +74,6 @@ jmu<!doctype html>
           <li>Fault Tolerance</li>
         </ul>
 
-        </section>
-
-        <section data-markdown>
-        ## What I Will Address
-        - Fault Tolerance
-          - Service Discovery
-          - Load Balancing
-        - Rapid Deployment
         </section>
 
         <section data-markdown>
@@ -200,7 +191,7 @@ jmu<!doctype html>
         <section data-markdown>
           ##Demo 1
           - Create Docker Machine
-          - Create Node Server
+          - Create NGINX Server
           - Show working
         </section>
 
@@ -223,14 +214,10 @@ jmu<!doctype html>
         </section>
 
         <section data-markdown>
-          ## Docker Compose
-        </section>
-
-        <section data-markdown>
           ##Demo 2
           - Create Docker Network
-          - Create Elastic Search and Mongo Containers
-          - Use Docker compose to put all together
+          - Create Elastic Search Containers
+          - Create Logstash Container
           - Show working
         </section>
 
@@ -240,132 +227,6 @@ jmu<!doctype html>
           - Mesos
           - Fleet
           - Swarm
-        </section>
-
-
-
-
-
-
-        <section>
-        <h2>CoreOS Cluster Architectures (small)</h2>
-        Up to 9 Nodes
-        <div><img src="images/small_coreos_cluster.png" style="height: 350px; width: auto;"></div>
-        <a href="https://coreos.com/docs/cluster-management/setup/cluster-architectures/" style="font-size: 24px">reference</a>
-        </section>
-
-        <section>
-        <h2>CoreOS Cluster Architectures (large)</h2>
-        <div><img src="images/large_cluster.png" style="height: 400px; width: auto;"></div>
-        <a href="https://coreos.com/docs/cluster-management/setup/cluster-architectures/" style="font-size: 24px">reference</a>
-        </section>
-
-
-
-
-
-
-
-
-        <section data-markdown>
-        ## Putting it All together
-
-        - Service Discovery
-        - Load Balancing
-        - Deployment
-        </section>
-
-        <section>
-        <h2>Legos?</h2>
-        <div>
-          <img src="images/complex_lego_1.png" style="height: 200px; width: auto;">
-          <img src="images/complex_lego_4.jpg" style="height: 200px; width: auto;">
-        </div>
-        <div>
-          <img class="fragment roll-in" src="images/complex_lego_2.jpg" style="height: 300px; width: auto;">
-          <img class="fragment roll-in" src="images/complex_lego_3.png" style="height: auto; width: 400px;">
-        </div>
-
-        </section>
-
-        <section data-markdown>
-        ## Arch Drawing
-        ![High Level](images/high_level_arch.jpg)
-        </section>
-
-        <section data-markdown>
-        ![Endpoint Proxy](images/frontend_proxy_pod.jpg)
-        </section>
-
-        <section data-markdown>
-        ![Static Content Pod](images/static_content_pod.jpg)
-        </section>
-
-        <section data-markdown>
-        ![API Gateway](images/api_gateway_pod.jpg)
-        </section>
-
-        <section data-markdown>
-        ![User Service Pod](images/user_service_pod.jpg)
-        </section>
-
-        <section data-markdown>
-        ![Address Service Pod](images/address_service_pod.jpg)
-        </section>
-
-        <section>
-          <section data-markdown>## Full Deployment Demo</section>
-          <section>
-            <h2>I Submit the Pods</h2>
-            <img src="images/submit_files.jpg" style="height: 500px; widrth: auto;">
-          </section>
-          <section>
-            <h2>I load the Pods</h2>
-            <img src="images/load_files.jpg" style="height: 500px; widrth: auto;">
-          </section>
-          <section>
-            <h2>I Start the Pods</h2>
-            <img src="images/start_files.jpg" style="height: 500px; widrth: auto;">
-          </section>
-          <section data-markdown>![gru](images/gru.jpg)</section>
-          <section data-markdown>## Full Deployment Demo</section>
-        </section>
-
-        <section data-markdown>
-        ## Whats missing
-        - Monitoring
-        - System Maps
-        - Metrics
-        - Automation
-        - Orchestration
-        - Different tools for Dev and Prod (Fig)
-        </section>
-
-        <section data-markdown>
-        ## Can We get there
-        - New Tools (kuberentes, prometheus, flynn, Swarm)
-        - Enterprise Support (Amazon, Google, RedHat)
-        - New Standards (CoreOS rocket)
-        </section>
-
-        <section data-markdown>
-        ## Issues
-        - Complexity
-        - Management
-        - Latency
-        - Log Management
-        - Tracing
-        - What else ??
-        </section>
-
-        <section>
-        <h1>Thank you</h1>
-        <div style="font-size: 15px;">
-          Git Hub Repo for Presentation - <a style="font-size: 25px" href="https://github.com/zombiepossum/docker-coreos-presentation">https://github.com/zombiepossum/docker-coreos-presentation</a>
-        </div>
-        <div style="font-size: 15px;">
-          My Fork of CoreOS Vagrant - - <a style="font-size: 25px" href="https://github.com/jmuraski/coreos-vagrant">https://github.com/jmuraski/coreos-vagrant</a>
-        </div>
         </section>
 
       </div>
